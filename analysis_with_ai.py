@@ -159,7 +159,7 @@ def show_analysis_with_ai():
                 )
 
                 headers = {
-                    "Authorization": f"Bearer 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",
+                    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
                     "Content-Type": "application/json"
                 }
 
