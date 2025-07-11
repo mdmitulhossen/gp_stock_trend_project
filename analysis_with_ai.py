@@ -7,8 +7,7 @@ import streamlit.components.v1 as components
 # -----------------------------
 # Your OpenRouter API KEY
 # -----------------------------
-OPENROUTER_API_KEY = "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"  # your actual key here
-
+OPENROUTER_API_KEY = "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"  # your actual key here
 # -----------------------------
 # Helper: Highlight text with emoji
 # -----------------------------
@@ -159,12 +158,12 @@ def show_analysis_with_ai():
                 )
 
                 headers = {
-                    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+                    "Authorization": f"Bearer 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",
                     "Content-Type": "application/json"
                 }
 
                 payload = {
-                    "model": "tngtech/deepseek-r1t2-chimera:free",
+                    "model": "deepseek/deepseek-r1-0528:free",
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.3
                 }
